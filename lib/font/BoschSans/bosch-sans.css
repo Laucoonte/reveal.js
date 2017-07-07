@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Bosch Sans';
+    src: url('BoschSans-Regular.eot');
+    src: url('BoschSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('BoschSans-Regular.woff') format('woff'),
+         url('BoschSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bosch Sans';
+    src: url('BoschSans-RegularItalic.eot');
+    src: url('BoschSans-RegularItalic.eot?#iefix') format('embedded-opentype'),
+         url('BoschSans-RegularItalic.woff') format('woff'),
+         url('BoschSans-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Bosch Sans';
+    src: url('BoschSans-Medium.eot');
+    src: url('BoschSans-Medium.eot?#iefix') format('embedded-opentype'),
+         url('BoschSans-Medium.woff') format('woff'),
+         url('BoschSans-Medium.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bosch Sans';
+    src: url('BoschSans-MediumItalic.eot');
+    src: url('BoschSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+         url('BoschSans-MediumItalic.woff') format('woff'),
+         url('BoschSans-MediumItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}

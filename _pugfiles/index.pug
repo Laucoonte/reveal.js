@@ -5,19 +5,104 @@ html
     meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
     title iBike
     link(rel="stylesheet", href="css/reveal.css")
-    link(rel="stylesheet", href="css/theme/simple.css")#theme
+    link(rel="stylesheet", href="css/theme/bosch.css")#theme
     link(rel="stylesheet", href="lib/css/zenburn.css")
     script.
       var link = document.createElement( 'link' );
       link.rel = 'stylesheet';
       link.type = 'text/css';
       link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-      document.getElementsByTagName( 'head' )[0].appendChild( link );
+      document.getElementsByTagName( 'head' )[0].appendChild( link );  body
+
   body
+    img(src="../../img/logus.svg")#logo
     div.reveal
       div.slides
-        section Slide 1
-        section Slide 2
+        //Slide 1
+        section.init(data-background-image="./img/BoschSupergraphic.png") iBike
+          p A TensorFlow #{'&'} Raspberry application
+
+        // Slide 2
+        //section(data-background-image="./img/movement.gif")
+
+        //section
+          h4 Installing Dependencies
+          br
+          pre
+            code(data-trim data-noescape)
+              | bosch@cpmx:~$ git clone https://github.com/Laucoonte/cpmx.git
+              br
+              | bosch@cpmx:~$ chmod 700 script.sh
+              br
+              | bosch@cpmx:~$ sudo ./script.sh
+        section
+          | ¿Cómo aprende una máquina?
+          br
+          br
+          br
+          img(data-src='./img/robot.png')
+        section
+          | Una Máquina
+          br
+          br
+          p 0=#{'>'}No &nbsp &nbsp &nbsp &nbsp 1=#{'>'}Sí
+          img(data-src='./img/tigre.png')
+          img(data-src='./img/gato.png', width='200')
+          p Tú le indicas a la máquina todo...
+        section
+          | Un niño
+          br
+          br
+          p Sí &nbsp &nbsp &nbsp &nbsp &nbsp Sí
+          img(data-src='./img/tigre.png')
+          img(data-src='./img/gato.png', width='200')
+          p Tú educas al niño...
+        section
+          img(data-src="./img/reco.gif", width="1500")
+        section
+          | Neurona
+          br
+          br
+          img(data-src="./img/neuron.jpg")
+        section
+          p Inteligencia artificial es el concepto mas amplio en relación a que las máquinas sean capaces de realizar tareas que maximicen sus posibilidades de éxito en algún objetivo o tarea.
+          p Machine Learning  es una aplicación de la IA basado en la idea de que las maquinas accedan a datos y pueden aprender por sí mismos y  y tomar decisiones.
+          //img(data-src="./img/inteligencia.png")
+        section
+          p Detección de rostro
+          p Reconocimiento facial, de voz o de objetos.
+          p Buscadores.
+          p Anti-spam.
+          p Genética
+          p Predicción y pronósticos.
+        section Video
+        section
+          | TensorFlow
+          br
+          br
+          img(data-src="./img/tensor.gif")
+
+
+        section(data-background-image="./img/movement.gif")
+        section Raspberry + TensorFlow
+        section
+          | Procesamiento vs Transferencia
+        section
+          | Raspberry + TensorFlow
+          br
+          br
+          img(data-src="./img/system.png")
+
+        section
+          h4 Descargarlo
+          br
+          pre
+            code(data-trim data-noescape)
+              | bosch@cpmx:~$ git clone https://github.com/Laucoonte/cpmx.git
+              br
+              | bosch@cpmx:~$ chmod 700 script.sh
+              br
+              | bosch@cpmx:~$ sudo ./script.sh
 
     script(src="lib/js/head.min.js")
     script(src="js/reveal.js")
@@ -30,3 +115,7 @@ html
           { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
         ]
       });
+      Reveal.configure({
+        slideNumber: False,
+        markdown: { smartypants: true }
+      })
